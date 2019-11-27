@@ -1,0 +1,691 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compitable" content="IE=edge">
+	<meta name="viewport" content="width=device-width,initial-scale=1">
+	<title>达观数据-首页</title>
+	<meta name="description" content="">
+	<meta name="keywords" content="">
+	<meta name="author" content="">
+	<link type="text/css" rel="stylesheet" href="css/bootstrap-3.3.7.min.css">
+	<link type="text/css" rel="stylesheet" href="css/font-awesome-4.2.0.min.css">
+	<link rel="stylesheet" type="text/css" href="css/common.css" />
+	<link rel="stylesheet" type="text/css" href="css/index.css" />
+	<link rel="stylesheet" href="css/swiper-3.4.2.min.css" />
+	<!-- IE<=9 H5+CSS3补丁  -->
+	<!--[if lte IE 9]>                         
+	   <script src="js/html5shiv.min.js"></script>
+	   <script src="js/respond.min.js"></script>                      
+	<![endif]-->
+	<!-- Favicons -->
+	<link rel="apple-touch-icon" href="images/favicon.ico">
+	<link rel="icon" href="images/favicon.ico">
+</head>
+
+<body>
+	<div class="top">
+		<div class="container">
+			<nav class="navbar">
+				<!--.navbar-fixed-top固定在顶部，且需body { padding-top: 70px; }-->
+				<div class="navbar-header">
+					<button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
+						data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+						<span class="sr-only">Toggle navigation</span>
+						<span class="fa fa-bars fa-2x"></span>
+					</button>
+					<a class="navbar-brand" href="index.html">
+						<img src="imgs/icon_top.png" />
+					</a>
+				</div>
+
+				<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+					<ul class="nav navbar-nav">
+						<li class="active"><a href="index.html">首页<span class="sr-only">(current)</span></a></li>
+						<li class="dropdown hidden-xs">
+							<a href="#1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">产品与服务</a>
+							<ul class="dropdown-menu text-center" aria-labelledby="dLabel">
+								<i class="fa fa-caret-up fa-3x"></i>
+								<li><a href="textmining.html">文本语义理解</a></li>
+								<li><a href="recommend.html">智能推荐引擎</a></li>
+								<li><a href="searchengines.html">垂直搜索引擎</a></li>
+								<li><a href="datamining.html">数据采集挖掘</a></li>
+								<li><a href="portrayal.html">用户画像</a></li>
+							</ul>
+						</li>
+						<li class="dropdown hidden-xs">
+							<a href="#1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">解决方案</a>
+							<ul class="dropdown-menu text-center" aria-labelledby="dLabel">
+								<i class="fa fa-caret-up fa-3x"></i>
+								<li><a href="elebusinesssln.html">电商解决方案</a></li>
+								<li><a href="mediasln.html">媒体解决方案</a></li>
+								<li><a href="technology-solutions.html">科技解决方案</a></li>
+								<li><a href="financial-solutions.html">金融解决方案</a></li>
+							</ul>
+						</li>
+						<!--折叠菜单 xs可见-->
+						<li class="panel-group visible-xs-block" id="accordion" role="tablist"
+							aria-multiselectable="true">
+							<div class="panel">
+								<div class="panel-heading" role="tab" id="headingOne">
+									<a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseOne"
+										aria-expanded="false" aria-controls="collapseOne">
+										<h4 class="panel-title">
+											产品与服务<i class="glyphicon glyphicon-chevron-right pull-right"></i>
+										</h4>
+									</a>
+
+								</div>
+								<div id="collapseOne" class="panel-collapse collapse" role="tabpanel"
+									aria-labelledby="headingOne">
+									<div class="panel-body">
+										<ul>
+											<li><a href="textmining.html">文本语义理解</a></li>
+											<li><a href="recommend.html">智能推荐引擎</a></li>
+											<li><a href="searchengines.html">垂直搜索引擎</a></li>
+											<li><a href="datamining.html">数据采集挖掘</a></li>
+											<li><a href="portrayal.html">用户画像</a></li>
+										</ul>
+									</div>
+								</div>
+							</div>
+							<div class="panel" style="border-top:1px solid #0D3048;">
+								<div class="panel-heading" role="tab" id="headingTwo">
+									<a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo"
+										aria-expanded="false" aria-controls="collapseTwo">
+										<h4 class="panel-title">
+											解决方案<i class="glyphicon glyphicon-chevron-right pull-right"></i>
+										</h4>
+									</a>
+								</div>
+								<div id="collapseTwo" class="panel-collapse collapse" role="tabpanel"
+									aria-labelledby="headingTwo">
+									<div class="panel-body">
+										<ul>
+											<li><a href="elebusinesssln.html">电商解决方案</a></li>
+											<li><a href="mediasln.html">媒体解决方案</a></li>
+											<li><a href="technology-solutions.html">科技解决方案</a></li>
+											<li><a href="financial-solutions.html">金融解决方案</a></li>
+										</ul>
+									</div>
+								</div>
+							</div>
+						</li>
+						<li><a href="blog.html">资讯</a></li>
+						<li class="dropdown hidden-xs">
+							<a href="about.html" data-toggle="dropdown" aria-haspopup="true"
+								aria-expanded="false">关于我们</a>
+							<ul class="dropdown-menu text-center" aria-labelledby="dLabel">
+								<i class="fa fa-caret-up fa-3x"></i>
+								<li><a href="about.html#description">公司简介</a></li>
+								<li><a href="about.html#honor">达观事迹</a></li>
+								<li><a href="about.html#join">加入我们</a></li>
+							</ul>
+						</li>
+						<li><a href="about.html" class="visible-xs-block">关于我们</a></li>
+
+					</ul>
+					<div class="nav-language">
+						<span class="active">CN</span>/<span>EN</span>
+						
+					</div>
+
+				</div><!-- /.navbar-collapse -->
+			</nav>
+		</div>
+		<!--container-->
+	</div>
+	<!--top-->
+	<!--首页轮播图-->
+	<div class="swiper1">
+		<div class="swiper-wrapper">
+			<div class="swiper-slide">
+				<img src="imgs/banner1.png" alt="banner1">
+
+			</div>
+			<div class="swiper-slide">
+				<img src="imgs/banner1.png" alt="banner2">
+
+			</div>
+			<div class="swiper-slide">
+				<img src="imgs/banner1.png" alt="banner3">
+
+			</div>
+		</div>
+		<!--分页器-->
+		<div class="swiper-pagination swiper-pagination1"></div>
+	</div>
+	<!-- title -->
+
+	<div class="products">
+		<div class="container">
+			<div class="row">
+				<img src="imgs/title_1.png">
+			</div>
+		</div>
+		<div class="container ">
+
+			<div class="product hidden-xs row product-1">
+
+				<div class="product-item col-md-3">
+					<div class="product-item-img">
+						<img src="imgs/icon_A1.png" />
+					</div>
+
+					<h3>性能优越</h3>
+					<p class="text-muted">性能高达10000+TPS的底层联盟链平台，能满足不同企业级的客户需求。</p>
+
+				</div>
+				<!--item2-->
+				<div class="product-item col-md-3">
+					<div class="product-item-img">
+						<img src="imgs/icon_A2.png" />
+					</div>
+
+					<h3>安全可靠</h3>
+					<p class="text-muted">多层加密机制、隐私保护机制、业务隔离机制，层层把控数据安全。</p>
+
+				</div>
+				<!--item3-->
+				<div class="product-item col-md-3">
+					<div class="product-item-img">
+						<img src="imgs/icon_A3.png" />
+					</div>
+
+					<h3>扩展灵活</h3>
+					<p class="text-muted">多语言多类型虚拟机、共识机制和 看替换的数据库类型等，让底层扩 展更加灵活。</p>
+
+				</div>
+				<!--item4-->
+				<div class="product-item  col-md-3">
+					<div class="product-item-img">
+						<img src="imgs/icon_A4.png" />
+					</div>
+
+					<h3>高可用性</h3>
+					<p class="text-muted">节点动态增删、一键启动联盟链和 可视化监控平台，能无障碍的满足 用户需求。</p>
+
+
+				</div>
+
+			</div>
+
+			<!--product-->
+			<div class="small-show visible-xs-block">
+				<ul class="list-unstyled">
+					<a href="#0">
+						<li>
+							<img src="images/pro-icon2.jpg" alt="" />文本语义理解
+						</li>
+					</a>
+					<a href="#0">
+						<li>
+							<img src="images/pro-icon-phone1.png" alt="" />智能推荐引擎
+						</li>
+					</a>
+					<a href="#0">
+						<li>
+							<img src="images/pro-icon-phone5.png" alt="" />垂直所搜引擎
+						</li>
+					</a>
+					<a href="#0">
+						<li>
+							<img src="images/pro-icon-phone4.png" alt="" />数据采集挖掘
+						</li>
+					</a>
+					<a href="#0">
+						<li>
+							<img src="images/pro-icon-5.png" alt="" />用户画像
+						</li>
+					</a>
+				</ul>
+			</div>
+			<!--samll-show-->
+			<div class="container">
+				<div class="row show-more">
+					<p class="text-muted text-right">了解更多 ></p>
+				</div>
+			</div>
+			<!-- show-more -->
+		</div>
+		<div class="body-bg1">
+			<img src="imgs/img_bg1.png">
+		</div>
+		<!--container-->
+	</div>
+	<!--products-->
+	<div class="products">
+		<div class="container ">
+			<div class="row">
+				<img src="imgs/title_2.png">
+			</div>
+		</div>
+		<div class="container product margin-bottom100 product-2">
+
+			<div class="row">
+				<div class="col-sm-6 col-md-4">
+					<div class="thumbnail">
+						<img src="imgs/img_lml.png" alt="联盟链">
+						<div class="caption">
+							<p>面向政府、企业的高性能、高安全、可拓展的 企业级联盟链平台。支持节点动态增删、多链 安全隔离、一键上链等特性。</p>
+
+						</div>
+					</div>
+				</div>
+				<div class="col-sm-6 col-md-4">
+					<div class="thumbnail">
+						<img src="imgs/img_kfpt.png" alt="开放平台">
+						<div class="caption">
+							<p>为企业和开发者提供区块链基础设施，支持数 据快速上链、合约部署管理、网络监控、安全 监测查询等。</p>
+
+						</div>
+					</div>
+				</div>
+				<div class="col-sm-6 col-md-4">
+					<div class="thumbnail">
+						<img src="imgs/img_jjfa.png" alt="解决方案">
+						<div class="caption">
+							<p>为企业、政府等机构提供区块链 + 产业模式切 实可行的底层私链、联盟链和应用场景解决方 案。</p>
+
+						</div>
+					</div>
+				</div>
+			</div>
+			<!--product-->
+			<div class="small-show visible-xs-block">
+				<ul class="list-unstyled">
+					<a href="#0">
+						<li>
+							<img src="images/pro-icon2.jpg" alt="" />文本语义理解
+						</li>
+					</a>
+					<a href="#0">
+						<li>
+							<img src="images/pro-icon-phone1.png" alt="" />智能推荐引擎
+						</li>
+					</a>
+					<a href="#0">
+						<li>
+							<img src="images/pro-icon-phone5.png" alt="" />垂直所搜引擎
+						</li>
+					</a>
+					<a href="#0">
+						<li>
+							<img src="images/pro-icon-phone4.png" alt="" />数据采集挖掘
+						</li>
+					</a>
+					<a href="#0">
+						<li>
+							<img src="images/pro-icon-5.png" alt="" />用户画像
+						</li>
+					</a>
+				</ul>
+			</div>
+			<!--samll-show-->
+
+		</div>
+		<!--container-->
+	</div>
+	<!--products-->
+	<div class="products position-relative">
+		<div class="container ">
+			<div class="row ">
+				<img src="imgs/title_3.png">
+
+			</div>
+
+		</div>
+		<div class="body-bg2">
+			<img src="imgs/img_bg2.png" class="">
+		</div>
+
+		<div class="container product product-3 ">
+
+			<div class="row">
+				<div class="col-sm-6 col-md-4 ">
+					<div class="product-item-3">
+						<div class="product-item-img">
+							<img src="imgs/icon_C1.png" />
+						</div>
+
+						<h3>物流追源</h3>
+						<p class="text-muted">了解更多 ></p>
+					</div>
+				</div>
+				<div class="col-sm-6 col-md-4 ">
+					<div class="product-item-3">
+						<div class="product-item-img">
+							<img src="imgs/icon_C1.png" />
+						</div>
+
+						<h3>物流追源</h3>
+						<p class="text-muted">了解更多 ></p>
+					</div>
+				</div>
+				<div class="col-sm-6 col-md-4 ">
+					<div class="product-item-3">
+						<div class="product-item-img">
+							<img src="imgs/icon_C1.png" />
+						</div>
+
+						<h3>物流追源</h3>
+						<p class="text-muted">了解更多 ></p>
+					</div>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-sm-6 col-md-4 ">
+					<div class="product-item-3">
+						<div class="product-item-img">
+							<img src="imgs/icon_C1.png" />
+						</div>
+
+						<h3>物流追源</h3>
+						<p class="text-muted">了解更多 ></p>
+					</div>
+				</div>
+				<div class="col-sm-6 col-md-4 ">
+					<div class="product-item-3">
+						<div class="product-item-img">
+							<img src="imgs/icon_C1.png" />
+						</div>
+
+						<h3>物流追源</h3>
+						<p class="text-muted">了解更多 ></p>
+					</div>
+				</div>
+				<div class="col-sm-6 col-md-4 ">
+					<div class="product-item-3">
+						<div class="product-item-img">
+							<img src="imgs/icon_C1.png" />
+						</div>
+
+						<h3>物流追源</h3>
+						<p class="text-muted">了解更多 ></p>
+					</div>
+				</div>
+			</div>
+
+			<!--product-->
+			<div class="small-show visible-xs-block">
+				<ul class="list-unstyled">
+					<a href="#0">
+						<li>
+							<img src="images/pro-icon2.jpg" alt="" />文本语义理解
+						</li>
+					</a>
+					<a href="#0">
+						<li>
+							<img src="images/pro-icon-phone1.png" alt="" />智能推荐引擎
+						</li>
+					</a>
+					<a href="#0">
+						<li>
+							<img src="images/pro-icon-phone5.png" alt="" />垂直所搜引擎
+						</li>
+					</a>
+					<a href="#0">
+						<li>
+							<img src="images/pro-icon-phone4.png" alt="" />数据采集挖掘
+						</li>
+					</a>
+					<a href="#0">
+						<li>
+							<img src="images/pro-icon-5.png" alt="" />用户画像
+						</li>
+					</a>
+				</ul>
+			</div>
+			<!--samll-show-->
+
+		</div>
+		<!--container-->
+	</div>
+	<!--products-->
+
+
+
+	<div class="about-us">
+		<div class="news bg-black-ash padding-40 position-relative">
+			<div class="container new-title">
+				<div class="row">
+					<img src="imgs/img_bg3.png" class="pull-left new-img-1">
+					<img src="imgs/title_4.png" class="new-img-2">
+					<div class=" pull-right show-more text-muted">查看更多 > </div>
+				</div>
+			</div>
+			<div class="container">
+
+				<div class="row">
+					<div class="col-sm-6 col-md-4">
+						<div class="thumbnail">
+							<div class="bg-border"></div>
+							<img src="imgs/img_news1.png">
+							<div class="caption">
+								<p>性能高达 1W TPS 的企业级联盟链 底层平台，为商业区块链创造全新价值。</p>
+
+							</div>
+						</div>
+					</div>
+					<div class="col-sm-6 col-md-4">
+						<div class="thumbnail">
+							<div class="bg-border"></div>
+							<img src="imgs/img_news2.png">
+							<div class="caption">
+								<p>性能高达 1W TPS 的企业级联盟链 底层平台，为商业区块链创造全新价值。</p>
+
+							</div>
+						</div>
+					</div>
+					<div class="col-sm-6 col-md-4">
+						<div class="thumbnail">
+							<div class="bg-border"></div>
+							<img src="imgs/img_news3.png">
+							<div class="caption">
+								<p>性能高达 1W TPS 的企业级联盟链 底层平台，为商业区块链创造全新价值。</p>
+
+							</div>
+						</div>
+					</div>
+				</div>
+
+
+			</div>
+			<div class="body-bg3">
+				<img src="imgs/img_bg4.png" alt="">
+			</div>
+		</div>
+		<!--news-->
+		<div class="case bg-black-ash padding-40 position-relative">
+			<div class="container padding-40">
+				<div class="row">
+
+					<img src="imgs/title_5.png" class="center-block">
+
+				</div>
+			</div>
+			<div class="container case-logos">
+
+				<div class="row">
+					<div class="col-sm-2 col-xs-4"><img src="imgs/partner_1.png" alt="logo" /></div>
+					<div class="col-sm-2 col-xs-4"><img src="imgs/partner_2.png" alt="logo" /></div>
+					<div class="col-sm-2 col-xs-4"><img src="imgs/partner_3.png" alt="logo" /></div>
+					<div class="col-sm-2 col-xs-4"><img src="imgs/partner_4.png" alt="logo" /></div>
+					<div class="col-sm-2 col-xs-4"><img src="imgs/partner_5.png" alt="logo" /></div>
+					<div class="col-sm-2 col-xs-4"><img src="imgs/partner_6.png" alt="logo" /></div>
+					<div class="col-sm-2 col-xs-4"><img src="imgs/partner_7.png" alt="logo" /></div>
+					<div class="col-sm-2 col-xs-4"><img src="imgs/partner_8.png" alt="logo" /></div>
+					<div class="col-sm-2 col-xs-4"><img src="imgs/partner_9.png" alt="logo" /></div>
+					<div class="col-sm-2 col-xs-4"><img src="imgs/partner_10.png" alt="logo" /></div>
+				</div>
+			</div>
+			<div class="body-bg4">
+				<img src="imgs/img_bg6.png" alt="">
+			</div>
+		</div>
+
+		<div class="jumbotron">
+			<img src="imgs/img_bg5.png" alt="">
+		</div>
+		<!--case-->
+
+	</div>
+	<!--about-us-->
+
+
+
+
+	<div class="bottom">
+		<a href="javascript:void(0);" id="gototop" class="gototop thumbnail">
+			<img src="imgs/btn_backtotop.png" alt="" />
+		</a>
+		<!--大屏幕显示footer-->
+		<div class="hidden-sm hidden-xs">
+
+			<div class="container">
+				<div class="row footer-2">
+					<div class="col-md-3">
+						<h4>产品与服务</h4>
+						<ul>
+							<li><a href="#1">联盟链</a></li>
+							<li><a href="#1">开放平台</a></li>
+						</ul>
+					</div>
+					<div class="col-md-3">
+
+						<h4>解决方案</h4>
+						<div class="col-md-6">
+							<ul>
+
+								<li><a href="#1">物流追溯</a></li>
+								<li><a href="#1">商品溯源</a></li>
+								<li><a href="#1">数字存证</a></li>
+							</ul>
+						</div>
+						<div class="col-md-6">
+							<ul>
+
+								<li><a href="#1">版权保护</a></li>
+								<li><a href="#1">供应链金融</a></li>
+								<li><a href="#1">公益慈善</a></li>
+							</ul>
+						</div>
+
+					</div>
+					<div class="col-md-3">
+						<h4>关于我们</h4>
+						<ul>
+
+							<li><a href="#1">资讯</a></li>
+							<li><a href="#1">关于我们</a></li>
+
+						</ul>
+					</div>
+
+					<div class="col-md-3">
+						<div>
+							<img src="imgs/icon_bottom.png" alt="" class="center-block">
+						</div>
+						<div class="contact">
+							<div class="contact-item">
+								<div class="contact-icon">
+									<img src="imgs/icon_service1.png" alt="">
+								</div>
+								<div class="contact-information">0571-88699007878</div>
+							</div>
+							<div class="contact-item">
+								<div class="contact-icon">
+									<img src="imgs/icon_service2.png" alt="">
+								</div>
+								<div class="contact-information">service @ wjs.ai</div>
+							</div>
+
+						</div>
+
+
+					</div>
+				</div>
+			</div>
+
+			<!--footer-2-->
+
+		</div>
+		<!--hidden-->
+		<!--小屏幕显示footer-->
+		<div class="visible-sm-block visible-xs-block">
+			<ul>
+				<li>电话：400-175-9889</li>
+				<li>官方微信号：DataGrand_</li>
+				<li>邮箱：contact@datagrand.com</li>
+				<li>地址：上海市浦东新区亮秀路112号Y1座</li>
+				<li><img src="images/qrcode.png" alt="二维码" /></li>
+			</ul>
+			<hr />
+			<a href="#2">达观数据大师app下载</a>
+
+		</div>
+		<div class="container">
+			<div class="row footer-2">
+				<hr />
+			</div>
+		</div>
+		<!--hidden-->
+		<div class="footer-3 text-center">
+			Copyright © 2019-2020杭州雾计算科技有限公司 All Rights Reserved. 浙ICP备1904
+		</div>
+	</div>
+
+	<script src="js/jquery-3.2.0.min.js"></script>
+	<script src="js/bootstrap-3.3.7.min.js"></script>
+	<script src="js/swiper-3.4.2.jquery.min.js"></script>
+	<script src="js/common.js" type="text/javascript" charset="utf-8"></script>
+	<script type="text/javascript">
+		$(function () {
+
+			var $ul = $('.wrapper ul');
+			var $wrapper = $('.wrapper');
+			$('.wrapper .fa-angle-left').click(function () {
+				var x = $wrapper.offset().left;
+				var y = $ul.offset().left;
+				if ((y - x) <= -590) {
+					$ul.css({
+						'left': 0
+					});
+				} else {
+					$ul.css({
+						'left': (y - x - 295) + 'px'
+					});
+				}
+			})
+			$('.wrapper .fa-angle-right').click(function () {
+				var x = $wrapper.offset().left;
+				var y = $ul.offset().left;
+				if ((y - x) >= 0) {
+					$ul.css({
+						'left': '-590px'
+					});
+				} else {
+					$ul.css({
+						'left': (y - x + 295) + 'px'
+					});
+				}
+			});
+			var mySwiper1 = new Swiper('.swiper1', {
+				direction: 'horizontal', //水平滑动
+				loop: true, //无限循环
+				grabCursorableOnInteraction: true,
+				autoplay: 3000,
+				pagination: '.swiper-pagination', //分页器
+			})
+			var mySwiper = new Swiper('.swiper-container', {
+				direction: 'horizontal', //水平滑动
+				loop: true, //无限循环
+				pagination: '.swiper-pagination', //分页器
+			})
+
+		})
+	</script>
+</body>
+
+</html>

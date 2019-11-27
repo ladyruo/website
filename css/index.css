@@ -1,0 +1,241 @@
+.swiper1 {
+	position: relative;
+	z-index: 0;
+	overflow: hidden;
+}
+
+.swiper1 img {
+	height: 583px;
+	width: 100%;
+}
+
+.swiper-pagination1 {
+	bottom: 30px !important;
+}
+
+@media only screen and (max-width: 768px) {
+	.swiper1 img {
+		height: 291px;
+		width: 100%;
+
+	}
+
+}
+
+.carousel-indicators {
+	z-index: 1;
+}
+
+
+
+.thumbnail {
+	height: 440px;
+	border-radius: 0;
+	padding: 0;
+	border: none;
+}
+
+.thumbnail .caption {
+	padding: 52px;
+	font-size: 14px;
+	line-height: 24px;
+	color: #0c0d0d;
+
+}
+
+.news .body-bg3 {
+
+	right: 30px;
+	bottom: 50px;
+	text-align: right;
+}
+
+.news .body-bg3 img {
+	width: 102px;
+	height: 129px;
+}
+
+.case .body-bg4 {
+
+	left: 10px;
+	top: 200px;
+	text-align: left;
+}
+
+.case .body-bg4 img {
+	width: 180px;
+	height: 180px;
+}
+
+.small-show ul a li {
+	padding: 20px 0;
+	border-bottom: 1px solid #EBEBEB;
+}
+
+.small-show ul a li img {
+	padding: 0 10px;
+	height: 32px;
+}
+
+.small-show ul {
+	border: 1px solid #EBEBEB;
+	background-color: white;
+}
+
+
+/* 了解更多 */
+.products .show-more {
+	height: 100px;
+	line-height: 100px;
+}
+
+
+.swiper-slide {
+	background-size: cover;
+}
+
+.slide1 {
+	background: url(../images/case-bg1.jpg) center center no-repeat;
+}
+
+.slide2 {
+	background: url(../images/case-bg2.jpg) center center no-repeat;
+}
+
+.slide3 {
+	background: url(../images/case-bg3.jpg) center center no-repeat;
+}
+
+.slide4 {
+	background: url(../images/case-bg4.jpg) center center no-repeat;
+}
+
+.slide5 {
+	background: url(../images/case-bg5.jpg) center center no-repeat;
+}
+
+.slide6 {
+	background: url(../images/case-bg6.jpg) center center no-repeat;
+}
+
+.swiper-slide>div {
+	text-align: center;
+	padding: 50px 20px 38px 20px;
+	color: white;
+	background-color: rgba(130, 134, 159, 0.7);
+}
+
+.swiper-slide>div>h4 {
+	margin-top: 0;
+}
+
+.swiper-slide>div>div p {
+	text-align: left;
+	color: #E8E5E6;
+	margin-top: 20px;
+}
+
+.swiper-slide>div>div a {
+	display: inline-block;
+	color: white;
+	padding: 8px 35px;
+	border: 1px solid white;
+	margin-top: 30px;
+}
+
+.swiper-slide>div>div a:hover {
+	background-color: white;
+	color: #3879D9;
+}
+
+.swiper-pagination-bullet-active {
+	background: white !important;
+}
+
+.swiper-container-horizontal>.swiper-pagination-bullets .swiper-pagination-bullet {
+	width: 20px;
+	height: 4px;
+	border-radius: 2px;
+	opacity: .8;
+
+}
+
+.news {
+	background-color: #0C0D0D;
+
+}
+
+.news .row {
+	position: relative;
+}
+
+
+.news .show-more {
+	position: absolute;
+	bottom: 0;
+	right: 0;
+}
+
+.news .new-img-2 {
+	height: 80px;
+	width: 160px;
+	position: absolute;
+	left: 50%;
+	bottom: 0;
+	transform: translateX(-50%);
+}
+
+.news .new-title {
+	margin-top: 40px;
+	margin-bottom: 40px;
+}
+
+.news .thumbnail {
+	position: relative;
+}
+
+.news .thumbnail .bg-border {
+	position: absolute;
+	width: 96%;
+	height: 96%;
+	background: url('../imgs/border_news.png') center no-repeat;
+	background-size: contain;
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%, -50%);
+
+}
+
+.news .thumbnail .caption {
+	background: #0c0d0d;
+	color: #fff;
+}
+
+.case {
+	padding-top: 30px;
+	padding-bottom: 80px;
+}
+
+.case h3 {
+	text-align: center;
+	font-size: 30px;
+}
+
+.case .case-logos img {
+	width: 100%;
+}
+
+.case .col-sm-2 {
+	margin-top: 20px;
+}
+
+
+
+
+.about-us .jumbotron {
+	height: 288px;
+	background: #0c0d0d;
+}
+
+/* 合作伙伴和资讯 */
+
