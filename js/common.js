@@ -52,4 +52,5 @@ $(function () {
 		
 		$('#'+type).find(".business-bar-img").attr("src",'imgs/chart_'+id+'.png')
 	});
+	
 })

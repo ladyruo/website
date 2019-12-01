@@ -3,8 +3,9 @@
 	line-height: 40px;
 	color: #666666;
 	padding: 0 150px;
-  }
-  .hidden-xs .business .about-us-connection .about-us-connection-item {
+}
+
+.hidden-xs .business .about-us-connection .about-us-connection-item {
 	width: 83%;
 	margin: 0 auto;
 	box-sizing: border-box;
@@ -12,10 +13,50 @@
 	color: #fff;
 	font-size: 18px;
 	line-height: 50px;
-  }
-  .hidden-xs .business .about-us-connection .about-us-connection-item img {
+}
+
+.hidden-xs .business .about-us-connection .about-us-connection-item img {
 	height: 40px;
 	width: 40px;
 	margin-right: 30px;
-  }
-  
+}
+
+
+
+
+/* pc  */
+.visible-xs-block .about-us-text {
+	font-size: 14px;
+	line-height: 40px;
+	color: #666666;
+}
+
+.visible-xs-block .business .about-us-connection .about-us-logo {
+	padding: 20px 0;
+	text-align: center;
+}
+
+.visible-xs-block .business .about-us-connection .about-us-logo img {
+	width: 80px;
+	height: 80px;
+}
+
+.visible-xs-block .business .about-us-connection .about-us-connection-info {
+	line-height: 30px;
+	margin-bottom: 20px;
+}
+
+.visible-xs-block .business .about-us-connection .about-us-connection-info img {
+	height: 30px;
+	width: 30px;
+	margin-right: 20px;
+}
+.visible-xs-block .business .about-us-connection .about-us-connection-info img {
+	height: 30px;
+	width: 30px;
+	margin-right: 20px;
+}
+.visible-xs-block .business .about-us-connection .about-us-connection-info  .text-muted {
+	color: #fff;
+}
+/* 移动 */
