@@ -88,21 +88,21 @@
 
 
 
-		
-        <div class="top-jumbotron position-relative">
-				<div class="jumbotron">
-					<div class="container">
-						<div class="row">
-							<h1> 资讯 <img src="imgs/img_title_small2.png" class="jumbotron-titile-icon"></h1>
-							<p>一览公司要闻、技术成果、行业活动和媒体报道</p>
-						</div>
+
+		<div class="top-jumbotron position-relative">
+			<div class="jumbotron">
+				<div class="container">
+					<div class="row">
+						<h1> 资讯 <img src="imgs/img_title_small2.png" class="jumbotron-titile-icon"></h1>
+						<p>一览公司要闻、技术成果、行业活动和媒体报道</p>
 					</div>
-	
 				</div>
-				<div class="body-bg5">
-					<img src="imgs/img_bg3.png">
-				</div>
+
 			</div>
+			<div class="body-bg5">
+				<img src="imgs/img_bg3.png">
+			</div>
+		</div>
 		<!-- jumbotron -->
 		<div class="new-list bg-black-ash padding-40">
 
@@ -116,7 +116,7 @@
 
 			<div class="container">
 
-				<div class="row" id="new-list">
+				<div class="row" id="new-list-pc">
 
 
 				</div>
@@ -134,17 +134,17 @@
 
 					<div class="container">
 						<div class="row footer-2">
-							<div class="col-md-3">
+							<div class="col-sm-3">
 								<h4>产品与服务</h4>
 								<ul>
 									<li><a href="underlying-alliance-chain.html">联盟链</a></li>
 									<li><a href="open-platform.html">开放平台</a></li>
 								</ul>
 							</div>
-							<div class="col-md-3">
+							<div class="col-sm-3">
 
 								<h4>解决方案</h4>
-								<div class="col-md-6">
+								<div class="col-sm-6">
 									<ul>
 
 										<li><a href="logistics-traceability.html">物流追溯</a></li>
@@ -152,7 +152,7 @@
 										<li><a href="digital-certificate.html">数字存证</a></li>
 									</ul>
 								</div>
-								<div class="col-md-6">
+								<div class="col-sm-6">
 									<ul>
 
 										<li><a href="charity.html">版权保护</a></li>
@@ -162,7 +162,7 @@
 								</div>
 
 							</div>
-							<div class="col-md-3">
+							<div class="col-sm-3">
 								<h4>关于我们</h4>
 								<ul>
 
@@ -172,7 +172,7 @@
 								</ul>
 							</div>
 
-							<div class="col-md-3">
+							<div class="col-sm-3">
 								<div>
 									<img src="imgs/icon_bottom.png" alt="" class="center-block">
 								</div>
@@ -301,25 +301,9 @@
 			</div>
 			<div class="container">
 
-				<div class="row" id="new-list">
+				<div class="row" id="new-list-mobile">
 
-					<div class="col-md-12">
-						<a href="new_detail.html?id=1">
-							<div class="media">
-								<div class="media-left"> <img class="media-object"
-										src="https://ss3.bdstatic.com/70cFv8Sh_Q1YnxGkpoWK1HF6hhy/it/u=3469411649,3611337938&fm=26&gp=0.jpg">
-								</div>
-								<div class="media-body position-relative">
-									<h4 class="media-heading">雾计算</h4>
-									<p class="text-muted">雾计算服务平台</p>
-									<div class="media-bottom">
-										<div class="pull-left">2019-11-29</div>
-										<div class="pull-right">公司要闻</div>
-									</div>
-								</div>
-							</div>
-						</a>
-					</div>
+
 
 				</div>
 			</div>
@@ -435,11 +419,31 @@
 				success: function (data) {
 					var list = data.data.list
 
-					var htmlText = ''
+					var htmlTextPc = ''
+					var htmlTextMobile = ''
 					$.each(list, function (i, item) {
 						item.type = item.type == 0 ? '公司要闻' : item
 							.type == 1 ? '行业活动' : item.type == 2 ? '技术成果' : '媒体报告';
-						htmlText += '	<div class="col-md-6">' +
+
+						htmlTextPc += '	<div class="col-sm-6">' +
+							'						<a href="new_detail.html?id=' + item.id + '">' +
+							'							<div class="media">' +
+							'								<div class="media-left"> <img class="media-object"' +
+							'										src="' + item.img + '">' +
+							'								</div>' +
+							'								<div class="media-body position-relative">' +
+							'									<h4 class="media-heading">' + item.title + '</h4>' +
+							'									<p class="text-muted">' + item.abstract + '</p>' +
+							'									<div class="media-bottom">' +
+							'										<div class="pull-left">' + item.date + '</div>' +
+							'										<div class="pull-right">' + item.type + '</div>' +
+							'									</div>' +
+							'								</div>' +
+							'							</div>' +
+							'						</a>' +
+							'					</div>';
+
+						htmlTextMobile += '	<div class="col-sm-12">' +
 							'						<a href="new_detail.html?id=' + item.id + '">' +
 							'							<div class="media">' +
 							'								<div class="media-left"> <img class="media-object"' +
@@ -458,7 +462,9 @@
 							'					</div>';
 					})
 
-					$('#new-list').append(htmlText)
+					$('#new-list-pc').append(htmlTextPc)
+					$('#new-list-mobile').append(htmlTextMobile)
+
 				}
 			})
 		})

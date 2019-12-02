@@ -45,12 +45,19 @@ $(function () {
 	$(".business-bar  .business-bar-item").click(function (e) {
 		var id = $(this).attr('data-id')
 		var type = $(this).attr('data-type')
-		console.log(type)
+		var terminal = $(this).attr('data-terminal')
 		$(this).siblings().removeClass('active'); // 删除其他兄弟元素的样式
 		$(this).addClass('active');
-		$(this).append($('#'+type).find(".media-icon-arrow"));
-		
-		$('#'+type).find(".business-bar-img").attr("src",'imgs/chart_'+id+'.png')
+		if (terminal && terminal === 'pc') {
+			$(this).append($('#' + type).find(".media-icon-arrow"));
+		}
+
+		$('#' + type).find(".business-bar-img").attr("src", 'imgs/chart_' + id + '.png')
 	});
-	
+	// 
+	$(".nav-language  span").click(function (e) {
+		$(this).siblings().removeClass('active');
+		$(this).addClass('active');
+	});
+
 })

@@ -86,22 +86,10 @@
 
 
 
-        <div class="top-jumbotron position-relative">
-            <div class="jumbotron">
-                <div class="container">
-                    <div class="row">
-                        <h1> 资讯 <img src="imgs/img_title_small2.png" class="jumbotron-titile-icon"></h1>
-                        <p>一览公司要闻、技术成果、行业活动和媒体报道</p>
-                    </div>
-                </div>
+        
 
-            </div>
-            <div class="body-bg5">
-                <img src="imgs/img_bg3.png">
-            </div>
-        </div>
         <!-- jumbotron -->
-        <div class="new-detail text-center" id="new-detail">
+        <div class="new-detail text-center" id="new-detail-pc">
 
 
         </div>
@@ -119,17 +107,17 @@
 
                 <div class="container">
                     <div class="row footer-2">
-                        <div class="col-md-3">
+                        <div class="col-sm-3">
                             <h4>产品与服务</h4>
                             <ul>
                                 <li><a href="underlying-alliance-chain.html">联盟链</a></li>
                                 <li><a href="open-platform.html">开放平台</a></li>
                             </ul>
                         </div>
-                        <div class="col-md-3">
+                        <div class="col-sm-3">
 
                             <h4>解决方案</h4>
-                            <div class="col-md-6">
+                            <div class="col-sm-6">
                                 <ul>
 
                                     <li><a href="logistics-traceability.html">物流追溯</a></li>
@@ -137,7 +125,7 @@
                                     <li><a href="digital-certificate.html">数字存证</a></li>
                                 </ul>
                             </div>
-                            <div class="col-md-6">
+                            <div class="col-sm-6">
                                 <ul>
 
                                     <li><a href="charity.html">版权保护</a></li>
@@ -147,7 +135,7 @@
                             </div>
 
                         </div>
-                        <div class="col-md-3">
+                        <div class="col-sm-3">
                             <h4>关于我们</h4>
                             <ul>
 
@@ -157,7 +145,7 @@
                             </ul>
                         </div>
 
-                        <div class="col-md-3">
+                        <div class="col-sm-3">
                             <div>
                                 <img src="imgs/icon_bottom.png" alt="" class="center-block">
                             </div>
@@ -274,39 +262,8 @@
 
         </div>
         <!-- top-jumbotron -->
-        <div class="new-detail text-center bg-black-ash" id="new-detail">
-            <h2>雾计算科技加入浙江省
-                区块链应用协会</h2>
-            <div class="new-detail-time padding-40 center-block">
-                <div class="pull-left"><img src="imgs/img_title_small2.png">
-                    2019-11-18 16:26:12</div>
-                <div class="pull-right"><img src="imgs/img_title_small2.png">
-                    公司要闻</div>
-            </div>
-            <div class="new-detail-content">
-                <div class="new-detail-content-img">
-                    <img src="https://ss3.bdstatic.com/70cFv8Sh_Q1YnxGkpoWK1HF6hhy/it/u=3469411649,3611337938&fm=26&gp=0.jpg"
-                        alt="" />
-                </div>
-                <div class="new-detail-text padding-40 text-left">
-                    <p>
-                        为作者提供区块链版权存证、区块链侵权取证渠道，并可
-                        开具作品登记证书。为作者提供区块链版权存证、区块链侵权
-                        取证渠道，并可开具作品登记证书。为作者提供区块链版权存
-                        证、区块链侵权取证渠道，并可开具作品登记证书。为作者提
-                        供区块链版权存证、区块链侵权取证渠道，并可开具作品登记
-                        证书。为作者提供区块链版权存证、区块链侵权取证渠道，并
-                        可开具作品登记证书。
-
-                        为作者提供区块链版权存证、区块链侵权取证渠道，并可
-                        开具作品登记证书。为作者提供区块链版权存证、区块链侵权
-                        取证渠道，并可开具作品登记证书。为作者提供区块链版权存
-                        证、区块链侵权取证渠道，并可开具作品登记证书。为作者提
-                        供区块链版权存证、区块链侵权取证渠道，并可开具作品登记
-                        证书。
-                    </p>
-                </div>
-            </div>
+        <div class="new-detail text-center bg-black-ash" id="new-detail-mobile">
+       
 
 
 
@@ -425,11 +382,13 @@
                 dataType: "json",
                 success: function (data) {
                     var detail = data.data.information
-                    console.log(detail)
+                   
                     var htmlText = ''
+				
                     detail.type = detail.type == 0 ? '公司要闻' : detail
                         .type == 1 ? '行业活动' : detail.type == 2 ? '技术成果' : '媒体报告';
-                    htmlText += '<h2>' + detail.title + '</h2>' +
+
+                        htmlText += '<h2>' + detail.title + '</h2>' +
                         '        <div class="new-detail-time padding-40 center-block">' +
                         '            <div class="pull-left"><img src="imgs/img_title_small2.png">' +
                         detail.date + '</div>' +
@@ -440,14 +399,15 @@
                         '            <div class="new-detail-content-img">' +
                         '                <img src="' + detail.img + '" alt="" />' +
                         '            </div>' +
-                        '            <div class="new-detail-text padding-40">' +
+                        '            <div class="new-detail-text padding-40 text-left">' +
                         '                <p> ' + detail.detail + '</p>' +
                         '            </div>' +
                         '        </div>';
 
 
 
-                    $('#new-detail').append(htmlText)
+                    $('#new-detail-pc').append(htmlText)
+                    $('#new-detail-mobile').append(htmlText)
 
                 }
             })

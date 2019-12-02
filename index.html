@@ -74,8 +74,8 @@
 
 
 						</ul>
-						<div class="nav-language">
-							<span class="active">CN</span>/<span>EN</span>
+						<div class="nav-language" id="nav-language">
+							<span class="active" data-type="cn">CN </span>/<span data-type="cn">>EN</span>
 
 						</div>
 
@@ -92,14 +92,7 @@
 					<img src="imgs/banner1.png" alt="banner1">
 
 				</div>
-				<!-- <div class="swiper-slide">
-						<img src="imgs/banner1.png" alt="banner2">
-		
-					</div>
-					<div class="swiper-slide">
-						<img src="imgs/banner1.png" alt="banner3">
-		
-					</div> -->
+
 			</div>
 			<!--分页器-->
 			<div class="swiper-pagination swiper-pagination1"></div>
@@ -116,7 +109,7 @@
 
 				<div class="product hidden-xs row product-1">
 
-					<div class="product-item col-md-3 wow rollIn">
+					<div class="product-item col-sm-3 wow rollIn">
 						<div class="product-item-img ">
 							<img src="imgs/icon_A1.png" />
 						</div>
@@ -126,7 +119,7 @@
 
 					</div>
 					<!--item2-->
-					<div class="product-item col-md-3 wow rollIn">
+					<div class="product-item col-sm-3 wow rollIn">
 						<div class="product-item-img">
 							<img src="imgs/icon_A2.png" />
 						</div>
@@ -136,7 +129,7 @@
 
 					</div>
 					<!--item3-->
-					<div class="product-item col-md-3 wow rollIn">
+					<div class="product-item col-sm-3 wow rollIn">
 						<div class="product-item-img">
 							<img src="imgs/icon_A3.png" />
 						</div>
@@ -146,7 +139,7 @@
 
 					</div>
 					<!--item4-->
-					<div class="product-item  col-md-3 wow rollIn">
+					<div class="product-item  col-sm-3 wow rollIn">
 						<div class="product-item-img">
 							<img src="imgs/icon_A4.png" />
 						</div>
@@ -186,7 +179,7 @@
 			<div class="container product margin-bottom100 product-2">
 
 				<div class="row">
-					<div class="col-sm-6 col-md-4  wow fadeInLeft">
+					<div class="col-sm-6 col-sm-4  wow fadeInLeft">
 						<div class="thumbnail">
 							<img src="imgs/img_lml.png" alt="联盟链">
 							<div class="caption">
@@ -195,7 +188,7 @@
 							</div>
 						</div>
 					</div>
-					<div class="col-sm-6 col-md-4  wow fadeInUp">
+					<div class="col-sm-6 col-sm-4  wow fadeInUp">
 						<div class="thumbnail">
 							<img src="imgs/img_kfpt.png" alt="开放平台">
 							<div class="caption">
@@ -204,7 +197,7 @@
 							</div>
 						</div>
 					</div>
-					<div class="col-sm-6 col-md-4 wow fadeInRight">
+					<div class="col-sm-6 col-sm-4 wow fadeInRight">
 						<div class="thumbnail">
 							<img src="imgs/img_jjfa.png" alt="解决方案">
 							<div class="caption">
@@ -236,7 +229,7 @@
 			<div class="container product product-3 ">
 
 				<div class="row">
-					<div class="col-sm-6 col-md-4 wow slideInLeft">
+					<div class="col-sm-6 col-sm-4 wow slideInLeft">
 						<div class="product-item-3">
 							<div class="product-item-img">
 								<img src="imgs/icon_C1.png" />
@@ -249,7 +242,7 @@
 
 						</div>
 					</div>
-					<div class="col-sm-6 col-md-4 wow slideInUp">
+					<div class="col-sm-6 col-sm-4 wow slideInUp">
 						<div class="product-item-3">
 							<div class="product-item-img">
 								<img src="imgs/icon_C2.png" />
@@ -262,7 +255,7 @@
 
 						</div>
 					</div>
-					<div class="col-sm-6 col-md-4 wow slideInRight	">
+					<div class="col-sm-6 col-sm-4 wow slideInRight	">
 						<div class="product-item-3">
 							<div class="product-item-img">
 								<img src="imgs/icon_C3.png" />
@@ -277,7 +270,7 @@
 					</div>
 				</div>
 				<div class="row">
-					<div class="col-sm-6 col-md-4 wow slideInLeft">
+					<div class="col-sm-6 col-sm-4 wow slideInLeft">
 						<div class="product-item-3">
 							<div class="product-item-img">
 								<img src="imgs/icon_C4.png" />
@@ -290,7 +283,7 @@
 
 						</div>
 					</div>
-					<div class="col-sm-6 col-md-4 wow slideInUp">
+					<div class="col-sm-6 col-sm-4 wow slideInUp">
 						<div class="product-item-3">
 							<div class="product-item-img">
 								<img src="imgs/icon_C5.png" />
@@ -303,7 +296,7 @@
 
 						</div>
 					</div>
-					<div class="col-sm-6 col-md-4 wow slideInRight	">
+					<div class="col-sm-6 col-sm-4 wow slideInRight	">
 						<div class="product-item-3">
 							<div class="product-item-img">
 								<img src="imgs/icon_C6.png" />
@@ -341,37 +334,9 @@
 				</div>
 				<div class="container">
 
-					<div class="row">
-						<div class="col-sm-6 col-md-4 wow fadeInLeftBig">
-							<div class="thumbnail">
-								<div class="bg-border"></div>
-								<img src="imgs/img_news1.png">
-								<div class="caption">
-									<p>性能高达 1W TPS 的企业级联盟链 底层平台，为商业区块链创造全新价值。</p>
+					<div class="row" id="new-list-pc">
 
-								</div>
-							</div>
-						</div>
-						<div class="col-sm-6 col-md-4 wow fadeInUpBig">
-							<div class="thumbnail">
-								<div class="bg-border"></div>
-								<img src="imgs/img_news2.png">
-								<div class="caption">
-									<p>性能高达 1W TPS 的企业级联盟链 底层平台，为商业区块链创造全新价值。</p>
 
-								</div>
-							</div>
-						</div>
-						<div class="col-sm-6 col-md-4 wow fadeInRightBig">
-							<div class="thumbnail">
-								<div class="bg-border"></div>
-								<img src="imgs/img_news3.png">
-								<div class="caption">
-									<p>性能高达 1W TPS 的企业级联盟链 底层平台，为商业区块链创造全新价值。</p>
-
-								</div>
-							</div>
-						</div>
 					</div>
 
 
@@ -429,17 +394,17 @@
 
 				<div class="container">
 					<div class="row footer-2">
-						<div class="col-md-3">
+						<div class="col-sm-3">
 							<h4>产品与服务</h4>
 							<ul>
 								<li><a href="underlying-alliance-chain.html">联盟链</a></li>
 								<li><a href="open-platform.html">开放平台</a></li>
 							</ul>
 						</div>
-						<div class="col-md-3">
+						<div class="col-sm-3">
 
 							<h4>解决方案</h4>
-							<div class="col-md-6">
+							<div class="col-sm-6">
 								<ul>
 
 									<li><a href="logistics-traceability.html">物流追溯</a></li>
@@ -447,7 +412,7 @@
 									<li><a href="digital-certificate.html">数字存证</a></li>
 								</ul>
 							</div>
-							<div class="col-md-6">
+							<div class="col-sm-6">
 								<ul>
 
 									<li><a href="charity.html">版权保护</a></li>
@@ -457,7 +422,7 @@
 							</div>
 
 						</div>
-						<div class="col-md-3">
+						<div class="col-sm-3">
 							<h4>关于我们</h4>
 							<ul>
 
@@ -467,7 +432,7 @@
 							</ul>
 						</div>
 
-						<div class="col-md-3">
+						<div class="col-sm-3">
 							<div>
 								<img src="imgs/icon_bottom.png" alt="" class="center-block">
 							</div>
@@ -844,27 +809,9 @@
 						</div>
 						<div class="container">
 
-							<div class="row">
-								<div class="col-xs-6">
-									<div class="thumbnail">
-										<div class="bg-border"></div>
-										<img src="imgs/img_news1.png">
-										<div class="caption">
-											<p>性能高达 1W TPS 的企业级联盟链 底层平台，为商业区块链创造全新价值。</p>
+							<div class="row" id="new-list-mobile">
 
-										</div>
-									</div>
-								</div>
-								<div class="col-xs-6">
-									<div class="thumbnail">
-										<div class="bg-border"></div>
-										<img src="imgs/img_news2.png">
-										<div class="caption">
-											<p>性能高达 1W TPS 的企业级联盟链 底层平台，为商业区块链创造全新价值。</p>
 
-										</div>
-									</div>
-								</div>
 
 							</div>
 
@@ -1021,7 +968,7 @@
 	<script src="js/swiper-3.4.2.jquery.min.js"></script>
 	<script src="js/common.js" type="text/javascript" charset="utf-8"></script>
 	<script type="text/javascript">
-		$(function () {
+		$(document).ready(function () {
 
 			var mySwiper1 = new Swiper('.swiper1', {
 				direction: 'horizontal', //水平滑动
@@ -1036,7 +983,51 @@
 				pagination: '.swiper-pagination', //分页器
 			})
 
+			$.ajax({
+				url: "http://ceshi.miczero.cn/zhizichain/api/informations",
+				data: {
+					language: 0
+				},
+				type: "GET",
+				dataType: "json",
+				success: function (data) {
+					var list = data.data.list;
+					pcList=list.slice(0,3);
+					mobileList=list.slice(0,2);
 
+					var htmlTextPc = ''
+					var htmlTextMobile = ''
+					$.each(pcList, function (i, item) {
+							htmlTextPc += '		<div class="col-sm-6 col-sm-4 wow fadeInRightBig">' +
+							'							<div class="thumbnail">' +
+							'								<div class="bg-border"></div>' +
+							'								<img src="' + item.img + '">' +
+							'								<div class="caption">' +
+							'									<p>' + item.title + '</p>' +
+							'								</div>' +
+							'							</div>' +
+							'						</div>';
+
+
+					
+					})
+					$.each(mobileList, function (i, item) {
+
+						htmlTextMobile += '		<div class="col-xs-6 wow fadeInRightBig">' +
+							'							<div class="thumbnail">' +
+							'								<div class="bg-border"></div>' +
+							'								<img src="' + item.img + '">' +
+							'								<div class="caption">' +
+							'									<p>' + item.title + '</p>' +
+							'								</div>' +
+							'							</div>' +
+							'						</div>';
+					})
+					$('#new-list-pc').append(htmlTextPc)
+					$('#new-list-mobile').append(htmlTextMobile)
+
+				}
+			})
 		})
 		new WOW().init();
 	</script>

@@ -10,7 +10,9 @@
 }
 
 
-
+.business-bar-item {
+	cursor: pointer
+}
 
 .text-muted {
 	color: #666666;
@@ -192,6 +194,10 @@ body {
 	background-size: 100% 100%;
 }
 
+.hidden-xs .products .product-3 .product-item-img {
+	padding-bottom: 0;
+}
+
 .hidden-xs .products .product-item-img img {
 	position: absolute;
 	left: 50%;
@@ -335,12 +341,13 @@ body {
 }
 
 /* process */
-.hidden-xs  .body-bg5 {
+.hidden-xs .body-bg5 {
 	position: absolute;
 	left: 200px;
 	bottom: -160px;
 }
-.hidden-xs  .body-bg5 img{
+
+.hidden-xs .body-bg5 img {
 	height: 80px;
 	width: 90px;
 }
@@ -408,6 +415,10 @@ body {
 
 .hidden-xs .navbar-collapse .nav-language .active {
 	color: #fff;
+}
+
+.hidden-xs .navbar-collapse .nav-language span {
+	cursor: pointer
 }
 
 .hidden-xs #bs-example-navbar-collapse-1 {
@@ -531,7 +542,7 @@ body {
 	text-decoration: none;
 }
 
-.hidden-xs .footer-2 .col-md-3 .col-md-6 {
+.hidden-xs .footer-2 .col-sm-3 .col-sm-6 {
 	padding-left: 0;
 }
 
@@ -816,6 +827,10 @@ body {
 	background-size: 100% 100%;
 }
 
+.visible-xs-block .products .product-3 .product-item-img {
+	padding-bottom: 0;
+}
+
 .visible-xs-block .products .product-item-img img {
 	position: absolute;
 	left: 50%;
@@ -984,12 +999,13 @@ body {
 }
 
 /* business */
-.visible-xs-block  .body-bg5 {
+.visible-xs-block .body-bg5 {
 	position: absolute;
 	left: 0;
 	bottom: -100px;
 }
-.visible-xs-block  .body-bg5 img{
+
+.visible-xs-block .body-bg5 img {
 	height: 80px;
 	width: 90px;
 }

@@ -1,5 +1,5 @@
 .about-us {
-	background: #181A1A!important;
+	background: #181A1A !important;
 }
 
 .hidden-xs .carousel-indicators {
@@ -213,6 +213,12 @@
 
 .hidden-xs .news .thumbnail {
 	position: relative;
+	background: #18181a;
+}
+
+.hidden-xs .news .thumbnail img {
+	height: 280px;
+	width: 100%;
 }
 
 .hidden-xs .news .thumbnail .bg-border {
@@ -227,7 +233,6 @@
 }
 
 .hidden-xs .news .thumbnail .caption {
-	background: #0c0d0d;
 	color: #fff;
 }
 
