@@ -102,7 +102,7 @@ $(function () {
 				en: 'Provide practical bottom-chain private chain, union chain and application scenario solutions for enterprises, governments and other institutions with blockchain + industry model',
 			},
 			'tag26': {
-				cn: '智子链具有行能优越、安全可靠、扩展灵活、便捷可用的特性，能很好地支撑政府、企业等机构基于区块链的应用诉求。',
+				cn: '智子链具有性能优越、安全可靠、扩展灵活、便捷可用的特性，能很好地支撑政府、企业等机构基于区块链的应用诉求。',
 				en: "Sophon Chain has the characteristics of superior performance, security and reliability, flexible expansion, convenience and availability, and can well support government, enterprises and other institutions' application requirements based on blockchain.",
 			},
 			'tag27': {
@@ -173,7 +173,7 @@ $(function () {
 
 			'tag43': {
 				cn: '安全检测',
-				en: 'Node dynamic adjustment',
+				en: 'Safety inspection',
 			},
 			'tag44': {
 				cn: '开发者无需关心区块链底层服务，只需将精力投放在应用业务层上。开放平台支持智能合约一键部署。',
@@ -612,18 +612,31 @@ $(function () {
 	$(".nav-language  span").click(function (e) {
 		$(this).siblings().removeClass('active');
 		$(this).addClass('active');
+
 		var type = $(this).attr('data-type')
 		var path = $(this).attr('data-path')
 
 		switchLanguage(type, path)
 
 	});
+
+
+	$(document).bind('click', function (e) {
+		var dataset=e.target.dataset
+	
+		if (dataset.bubble !== 'false') {
+			
+			$('#collapse').removeClass('in');
+		}
+		
+	});
+
 	$(document).ready(function () {
-		$('.default-open').find('.dropdown-menu').css("display","block")
+		$('.default-open').find('.dropdown-menu').css("display", "block")
 		$('#navbar').width($(window).width())
 		var language = sessionStorage.getItem('language')
 		if (language) {
-			$("#" + language).click()
+			$("." + language).click()
 		}
 
 	})
