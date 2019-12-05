@@ -6,9 +6,10 @@
     <meta http-equiv="X-UA-Compitable" content="IE=edge">
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <title>智子链-雾计算科技旗下区块链技术服务平台</title>
-    <meta name="description" content="">
-    <meta name="keywords" content="">
-    <meta name="author" content="">
+    <meta name="description"
+        content="智子链是杭州雾计算科技有限公司旗下区块链底层和服务平台，专注于提供区块链+溯源、慈善、存证、供应链金融、版权等解决方案，让区块链应用真实落地。我们的使命是让世界更加透明可信！">
+    <meta name="keywords" content="智子链，sophon chain，雾计算，区块链技术公司，区块链底层平台，区块链解决方案，区块链+产业，区块链服务
+	">
     <link type="text/css" rel="stylesheet" href="css/bootstrap-3.3.7.min.css">
     <link rel="stylesheet" type="text/css" href="css/animate.css">
     <link rel="stylesheet" type="text/css" href="css/common.css" />
@@ -18,66 +19,79 @@
 	   <script src="js/respond.min.js"></script>                      
 	<![endif]-->
     <!-- Favicons -->
-
+    <link rel="apple-touch-icon" href="imgs/favicon.ico">
+    <link rel="icon" href="imgs/favicon.ico">
 </head>
 
 <body>
-    <div class="hidden-xs">
+    <div class="hidden-xs" id="pc-body">
         <div class="top">
             <div class="container">
                 <nav class="navbar">
                     <!--.navbar-fixed-top固定在顶部，且需body { padding-top: 70px; }-->
                     <div class="navbar-header">
-                        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
-                            data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
-                            <span class="sr-only">Toggle navigation</span>
-                            <span class="fa fa-bars fa-2x"></span>
-                        </button>
+
                         <a class="navbar-brand" href="index.html">
-                            <img src="imgs/icon_top.png" />
+                            <img src="imgs/icon_top.png" alt="雾计算" />
                         </a>
                     </div>
 
                     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                         <ul class="nav navbar-nav">
-                            <li><a href="index.html">首页<span class="sr-only">(current)</span></a></li>
+                            <li><a href="index.html"><span name="switch-tag" data-tag="tag1">首页</span>
+                                </a></li>
                             <li class="dropdown hidden-xs active">
-                                <a href="#1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">产品与服务</a>
+                                <a href="#1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><span
+                                        name="switch-tag" data-tag="tag2">产品与服务</span> </a>
                                 <ul class="dropdown-menu text-center" aria-labelledby="dLabel">
                                     <i class="fa fa-caret-up fa-3x"></i>
-                                    <li><a href="underlying-alliance-chain.html">底层联盟链</a></li>
-                                    <li><a href="open-platform.html">开放平台</a></li>
+                                    <li><a href="underlying-alliance-chain.html" name="switch-tag"
+                                            data-tag="tag3">底层联盟链</a></li>
+                                    <li><a href="open-platform.html" name="switch-tag" data-tag="tag4">开放平台</a></li>
 
                                 </ul>
                             </li>
                             <li class="dropdown hidden-xs">
-                                <a href="#1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">解决方案</a>
+                                <a href="#1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><span
+                                        name="switch-tag" data-tag="tag5">解决方案</span> </a>
                                 <ul class="dropdown-menu text-center" aria-labelledby="dLabel">
                                     <i class="fa fa-caret-up fa-3x"></i>
-                                    <li><a href="logistics-traceability.html">物流追溯</a></li>
-                                    <li><a href="commodity-traceability.html">商品溯源</a></li>
-                                    <li><a href="digital-certificate.html">数字存证</a></li>
-                                    <li><a href="charity.html">公益慈善</a></li>
-                                    <li><a href="supply-chain-inance.html">供应链金融</a></li>
-                                    <li><a href="copyright-protection.html">版权保护</a></li>
+                                    <li><a href="logistics-traceability.html" name="switch-tag" data-tag="tag6">物流追溯</a>
+                                    </li>
+                                    <li><a href="commodity-traceability.html" name="switch-tag" data-tag="tag7">商品溯源</a>
+                                    </li>
+                                    <li><a href="digital-certificate.html" name="switch-tag" data-tag="tag8">数字存证</a>
+                                    </li>
+                                    <li><a href="charity.html" name="switch-tag" data-tag="tag9">公益慈善</a></li>
+                                    <li><a href="supply-chain-inance.html" name="switch-tag" data-tag="tag10">供应链金融</a>
+                                    </li>
+                                    <li><a href="copyright-protection.html" name="switch-tag" data-tag="tag11">版权保护</a>
+                                    </li>
                                 </ul>
                             </li>
-                            <li><a href="news.html">资讯</a></li>
+                            <li><a href="news.html"> <span name="switch-tag" data-tag="tag12">资讯</span> </a></li>
                             <li class="dropdown hidden-xs ">
-                                <a href="about-us.html">关于我们</a>
+                                <a href="about-us.html"><span name="switch-tag" data-tag="tag13">关于我们</span> </a>
+
                             </li>
 
+
+
                         </ul>
-                        <div class="nav-language">
-                            <span class="active">CN</span>/<span>EN</span>
+                        <div class="nav-language" id="nav-language">
+                            <span class="active" data-type="cn" data-path="underlying-alliance-chain" id="cn">CN
+                            </span>/<span data-type="en" data-path="underlying-alliance-chain" id="en">EN</span>
 
                         </div>
 
-                    </div><!-- /.navbar-collapse -->
+                    </div>
                 </nav>
             </div>
             <!--container-->
         </div>
+
+
+
         <!--top-->
 
 
@@ -86,10 +100,10 @@
             <div class="jumbotron">
                 <div class="container">
                     <div class="row">
-                        <h1 class="wow slideInLeft"> 底层联盟链 <img src="imgs/img_title_small2.png"
-                                class="jumbotron-titile-icon">
+                        <h1 class="wow slideInLeft"> <span name="switch-tag" data-tag="tag3">底层联盟链</span> <img
+                                src="imgs/img_title_small2.png" class="jumbotron-titile-icon">
                         </h1>
-                        <p class="wow slideInRight">
+                        <p class="wow slideInRight" name="switch-tag" data-tag="tag26">
 
 
                             智子链具有行能优越、安全可靠、扩展灵活、便捷可用的特性，能很好地支撑
@@ -108,18 +122,20 @@
 
         <div class="business position-relative bg-black text-center">
             <div class="container position-relative business-detail business-bar">
-                <div class="row height-800" id="bar1">
+                <div class="row height-800" id="pc-bar1">
                     <div class="col-sm-4 business-introduction">
-                        <h3 class="business-title wow rollIn">性能优越</h3>
+                        <h3 class="business-title wow rollIn" name="switch-tag" data-tag="tag14">性能优越</h3>
                         <p class="business-label color-666  wow rollIn">—— Superior Performance ——</p>
 
 
-                        <div class="media position-relative  business-bar-item active" data-id="8" data-type="bar1" data-terminal="pc">
-                            <h3 class="wow zoomIn">高速交易验证签名</h3>
+                        <div class="media position-relative  business-bar-item active" data-id="8" data-type="pc-bar1"
+                            data-terminal="pc">
+                            <h3 class="wow zoomIn" name="switch-tag" data-tag="tag27">高速交易验证签名</h3>
                             <img src="imgs/arrow_chosen.png" alt="" class="media-icon-arrow">
                         </div>
-                        <div class="media position-relative  business-bar-item " data-id="12" data-type="bar1" data-terminal="pc">
-                            <h3 class="wow zoomIn">高性能共识算法</h3>
+                        <div class="media position-relative  business-bar-item " data-id="12" data-type="pc-bar1"
+                            data-terminal="pc">
+                            <h3 class="wow zoomIn" name="switch-tag" data-tag="tag28">高性能共识算法</h3>
 
                         </div>
 
@@ -137,21 +153,24 @@
         </div>
         <div class="business position-relative bg-black text-center business-bar">
             <div class="container position-relative business-detail">
-                <div class="row height-800" id="bar2">
+                <div class="row height-800" id="pc-bar2">
                     <div class="col-sm-4 business-introduction bg-black-ash">
-                        <h3 class="business-title  wow rollIn">安全可靠</h3>
+                        <h3 class="business-title  wow rollIn" name="switch-tag" data-tag="tag16">安全可靠</h3>
                         <p class="business-label color-666  wow rollIn">—— Safe And Reliable ——</p>
 
 
-                        <div class="media position-relative  business-bar-item active" data-id="9" data-type="bar2" data-terminal="pc">
-                            <h3 class="wow zoomIn">多层加密机制</h3>
+                        <div class="media position-relative  business-bar-item active" data-id="9" data-type="pc-bar2"
+                            data-terminal="pc">
+                            <h3 class="wow zoomIn" name="switch-tag" data-tag="tag29">多层加密机制</h3>
                             <img src="imgs/arrow_chosen.png" alt="" class="media-icon-arrow">
                         </div>
-                        <div class="media position-relative  business-bar-item " data-id="13" data-type="bar2" data-terminal="pc">
-                            <h3 class="wow zoomIn">隐私保护机制</h3>
+                        <div class="media position-relative  business-bar-item " data-id="13" data-type="pc-bar2"
+                            data-terminal="pc">
+                            <h3 class="wow zoomIn" name="switch-tag" data-tag="tag30">隐私保护机制</h3>
                         </div>
-                        <div class="media position-relative  business-bar-item " data-id="16" data-type="bar2" data-terminal="pc">
-                            <h3 class="wow zoomIn">业务隔离机制</h3>
+                        <div class="media position-relative  business-bar-item " data-id="16" data-type="pc-bar2"
+                            data-terminal="pc">
+                            <h3 class="wow zoomIn" name="switch-tag" data-tag="tag31">业务隔离机制</h3>
                         </div>
                     </div>
                     <div class="col-sm-8 business-right  bg-black">
@@ -165,22 +184,24 @@
         </div>
         <div class="business position-relative bg-black text-center business-bar">
             <div class="container position-relative business-detail">
-                <div class="row height-800" id="bar3">
+                <div class="row height-800" id="pc-bar3">
                     <div class="col-sm-4 business-introduction">
-                        <h3 class="business-title  wow rollIn">扩展灵活</h3>
+                        <h3 class="business-title  wow rollIn" name="switch-tag" data-tag="tag18">扩展灵活</h3>
                         <p class="business-label color-666  wow rollIn">—— Flexible Extend ——</p>
 
-                        <div class="media position-relative  business-bar-item active" data-id="10" data-type="bar3">
-                            <h3 class="wow zoomIn">数据库类型可替换</h3>
+                        <div class="media position-relative  business-bar-item active" data-id="10" data-type="pc-bar3">
+                            <h3 class="wow zoomIn" name="switch-tag" data-tag="tag32">数据库类型可替换</h3>
                             <img src="imgs/arrow_chosen.png" alt="" class="media-icon-arrow">
                         </div>
-                        <div class="media position-relative  business-bar-item " data-id="14" data-type="bar3" data-terminal="pc">
-                            <h3 class="wow zoomIn">可插拔共识机制</h3>
+                        <div class="media position-relative  business-bar-item " data-id="14" data-type="pc-bar3"
+                            data-terminal="pc">
+                            <h3 class="wow zoomIn" name="switch-tag" data-tag="tag33">可插拔共识机制</h3>
 
                         </div>
 
-                        <div class="media position-relative  business-bar-item " data-id="17" data-type="bar3" data-terminal="pc">
-                            <h3 class="wow zoomIn">多语言虚拟机</h3>
+                        <div class="media position-relative  business-bar-item " data-id="17" data-type="pc-bar3"
+                            data-terminal="pc">
+                            <h3 class="wow zoomIn" name="switch-tag" data-tag="tag34">多语言虚拟机</h3>
 
                         </div>
 
@@ -198,21 +219,21 @@
         </div>
         <div class="business position-relative bg-black text-center business-bar">
             <div class="container position-relative business-detail">
-                <div class="row height-800" data-id="3" id="bar4">
+                <div class="row height-800" data-id="3" id="pc-bar4">
                     <div class="col-sm-4 business-introduction bg-black-ash">
-                        <h3 class="business-title  wow rollIn">高可用性</h3>
+                        <h3 class="business-title  wow rollIn" name="switch-tag" data-tag="tag20">高可用性</h3>
                         <p class="business-label color-666  wow rollIn">—— High Availability ——</p>
 
 
-                        <div class="media position-relative  business-bar-item active" data-id="11" data-type="bar4">
-                            <h3 class="wow zoomIn">一键启动联盟链</h3>
+                        <div class="media position-relative  business-bar-item active" data-id="11" data-type="pc-bar4">
+                            <h3 class="wow zoomIn" name="switch-tag" data-tag="tag35">一键启动联盟链</h3>
                             <img src="imgs/arrow_chosen.png" alt="" class="media-icon-arrow">
                         </div>
-                        <div class="media position-relative  business-bar-item " data-id="15" data-type="bar4">
-                            <h3 class="wow zoomIn">可视化监控平台</h3>
+                        <div class="media position-relative  business-bar-item " data-id="15" data-type="pc-bar4">
+                            <h3 class="wow zoomIn" name="switch-tag" data-tag="tag36">可视化监控平台</h3>
                         </div>
-                        <div class="media position-relative  business-bar-item " data-id="18" data-type="bar4">
-                            <h3 class="wow zoomIn">节点动态调整</h3>
+                        <div class="media position-relative  business-bar-item " data-id="18" data-type="pc-bar4">
+                            <h3 class="wow zoomIn" name="switch-tag" data-tag="tag37">节点动态调整</h3>
                         </div>
                     </div>
                     <div class="col-sm-8 business-right  bg-black">
@@ -229,45 +250,51 @@
             <a href="javascript:void(0);" id="gototop" class="gototop thumbnail">
                 <img src="imgs/btn_backtotop.png" alt="" />
             </a>
-            <!--大屏幕显示footer-->
-            <div class="hidden-sm hidden-xs">
 
+            <div class="hidden-sm hidden-xs">
                 <div class="container">
                     <div class="row footer-2">
                         <div class="col-sm-3">
-                            <h4>产品与服务</h4>
+                            <h4 data-tag="tag2" name="switch-tag">产品与服务</h4>
                             <ul>
-                                <li><a href="underlying-alliance-chain.html">联盟链</a></li>
-                                <li><a href="open-platform.html">开放平台</a></li>
+                                <li><a href="underlying-alliance-chain.html" data-tag="tag3" name="switch-tag">联盟链</a>
+                                </li>
+                                <li><a href="open-platform.html" data-tag="tag4" name="switch-tag">开放平台</a></li>
                             </ul>
                         </div>
-                        <div class="col-sm-3">
+                        <div class="col-sm-4">
 
-                            <h4>解决方案</h4>
+                            <h4 data-tag="tag5" name="switch-tag">解决方案</h4>
                             <div class="col-sm-6">
                                 <ul>
 
-                                    <li><a href="logistics-traceability.html">物流追溯</a></li>
-                                    <li><a href="commodity-traceability.html">商品溯源</a></li>
-                                    <li><a href="digital-certificate.html">数字存证</a></li>
+                                    <li><a href="logistics-traceability.html" data-tag="tag6" name="switch-tag">物流追溯</a>
+                                    </li>
+                                    <li><a href="commodity-traceability.html" data-tag="tag7" name="switch-tag">商品溯源</a>
+                                    </li>
+                                    <li><a href="digital-certificate.html" data-tag="tag8" name="switch-tag">数字存证</a>
+                                    </li>
                                 </ul>
                             </div>
                             <div class="col-sm-6">
                                 <ul>
 
-                                    <li><a href="charity.html">版权保护</a></li>
-                                    <li><a href="supply-chain-inance.html">供应链金融</a></li>
-                                    <li><a href="copyright-protection.html">公益慈善</a></li>
+                                    <li><a href="copyright-protection.html" data-tag="tag11" name="switch-tag">版权保护</a>
+                                    </li>
+                                    <li><a href="supply-chain-inance.html" data-tag="tag10" name="switch-tag">供应链金融</a>
+                                    </li>
+                                    <li><a href="charity.html" data-tag="tag9" name="switch-tag">公益慈善</a>
+                                    </li>
                                 </ul>
                             </div>
 
                         </div>
-                        <div class="col-sm-3">
-                            <h4>关于我们</h4>
+                        <div class="col-sm-2">
+                            <h4 data-tag="tag13" name="switch-tag">关于我们</h4>
                             <ul>
 
-                                <li><a href="news.html">资讯</a></li>
-                                <li><a href="about-us.html">关于我们</a></li>
+                                <li><a href="news.html" data-tag="tag12" name="switch-tag">资讯</a></li>
+                                <li><a href="about-us.html" data-tag="tag13" name="switch-tag">关于我们</a></li>
 
                             </ul>
                         </div>
@@ -281,13 +308,13 @@
                                     <div class="contact-icon">
                                         <img src="imgs/icon_service1.png" alt="">
                                     </div>
-                                    <div class="contact-information">0571-88699007878</div>
+                                    <div class="contact-information">15068838852 </div>
                                 </div>
                                 <div class="contact-item">
                                     <div class="contact-icon">
                                         <img src="imgs/icon_service2.png" alt="">
                                     </div>
-                                    <div class="contact-information">service @ wjs.ai</div>
+                                    <div class="contact-information">sc@wjs.ai</div>
                                 </div>
 
                             </div>
@@ -309,14 +336,14 @@
             </div>
 
             <div class="footer-3 text-center">
-                Copyright © 2019-2020杭州雾计算科技有限公司 All Rights Reserved. 浙ICP备1904
+                Copyright © 2019-2020杭州雾计算科技有限公司 All Rights Reserved. 浙ICP备19046791号-2
             </div>
         </div>
     </div>
 
-    <div class="visible-xs-block">
+    <div class="visible-xs-block" id="mobile-body">
         <div class="top">
-            <nav class="navbar navbar-default">
+            <nav class="navbar navbar-default navbar-fixed-top" id="navbar">
                 <div class="container-fluid">
                     <!-- Brand and toggle get grouped for better mobile display -->
                     <div class="navbar-header">
@@ -327,8 +354,8 @@
 
                         </div>
                         <div class="nav-language">
-
-                            <span class="active">CN</span>/<span>EN</span>
+                            <span class="active" data-type="cn" data-path="underlying-alliance-chain" id="cn">CN
+                            </span>/<span data-type="en" data-path="underlying-alliance-chain" id="en">EN</span>
                         </div>
                         <a class="navbar-brand" href="index.html">
                             <img src="imgs/mobile-img/icon_top_phone.png" alt="雾计算">
@@ -338,30 +365,36 @@
                     <!-- Collect the nav links, forms, and other content for toggling -->
                     <div class="collapse navbar-collapse" id="collapse">
                         <ul class="nav navbar-nav">
-                            <li><a href="index.html"><span>首页</span> </a></li>
+                            <li><a href="index.html"><span name="switch-tag" data-tag="tag1">首页</span> </a></li>
                             <li class="dropdown default-open">
-                                <a href="#1" data-toggle="dropdown" aria-haspopup="true"
-                                    aria-expanded="false"><span>产品与服务</span> </a>
+                                <a href="#1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><span
+                                        name="switch-tag" data-tag="tag2">产品与服务</span> </a>
                                 <ul class="dropdown-menu  dropdown-menu-1" aria-labelledby="dLabel">
-                                    <li><a href="underlying-alliance-chain.html">底层联盟链</a></li>
-                                    <li><a href="open-platform.html">开放平台</a></li>
+                                    <li><a href="underlying-alliance-chain.html" name="switch-tag"
+                                            data-tag="tag3">底层联盟链</a></li>
+                                    <li><a href="open-platform.html" name="switch-tag" data-tag="tag4">开放平台</a></li>
 
                                 </ul>
                             </li>
-                            <li class="open dropdown">
+                            <li class="dropdown">
                                 <a href="#1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                    <span>解决方案</span></a>
+                                    <span name="switch-tag" data-tag="tag5">解决方案</span></a>
                                 <ul class="dropdown-menu dropdown-menu-2" aria-labelledby="dLabel">
-                                    <li><a href="logistics-traceability.html">物流追溯</a></li>
-                                    <li><a href="commodity-traceability.html">商品溯源</a></li>
-                                    <li><a href="digital-certificate.html">数字存证</a></li>
-                                    <li><a href="charity.html">公益慈善</a></li>
-                                    <li><a href="supply-chain-inance.html">供应链金融</a></li>
-                                    <li><a href="copyright-protection.html">版权保护</a></li>
+                                    <li><a href="logistics-traceability.html" name="switch-tag" data-tag="tag6">物流追溯</a>
+                                    </li>
+                                    <li><a href="commodity-traceability.html" name="switch-tag" data-tag="tag7">商品溯源</a>
+                                    </li>
+                                    <li><a href="digital-certificate.html" name="switch-tag" data-tag="tag8">数字存证</a>
+                                    </li>
+                                    <li><a href="charity.html" name="switch-tag" data-tag="tag9">公益慈善</a></li>
+                                    <li><a href="supply-chain-inance.html" name="switch-tag" data-tag="tag10">供应链金融</a>
+                                    </li>
+                                    <li><a href="copyright-protection.html" name="switch-tag" data-tag="tag11">版权保护</a>
+                                    </li>
                                 </ul>
                             </li>
-                            <li><a href="news.html"> <span>资讯</span></a> </li>
-                            <li> <a href="about-us.html"> <span>关于我们</span></a></li>
+                            <li><a href="news.html"> <span name="switch-tag" data-tag="tag12">资讯</span></a> </li>
+                            <li> <a href="about-us.html"> <span name="switch-tag" data-tag="tag13">关于我们</span></a></li>
 
 
 
@@ -377,10 +410,11 @@
             <div class="jumbotron">
                 <div class="container">
 
-                    <h1 class="wow slideInLeft"> 底层联盟链 <img src="imgs/img_title_small2.png"
+                    <h1 class="wow slideInLeft" name="switch-tag" data-tag="tag3">
+                        <span name="switch-tag" data-tag="tag3">底层联盟链</span> <img src="imgs/img_title_small2.png"
                             class="jumbotron-titile-icon">
                     </h1>
-                    <p class="wow slideInRight"> 智子链具有行能优越、安全可靠、扩展灵活、便捷可用的特性，能很好地支撑
+                    <p class="wow slideInRight" name="switch-tag" data-tag="tag26"> 智子链具有行能优越、安全可靠、扩展灵活、便捷可用的特性，能很好地支撑
                         政府、企业等机构基于区块链的应用诉求。</p>
 
                 </div>
@@ -393,24 +427,29 @@
 
 
             <div class="business position-relative text-center">
-                <div class=" position-relative business-detail business-bar" id="bar1">
+                <div class=" position-relative business-detail business-bar" id="mobile-bar1">
 
                     <div class=" business-introduction">
-                        <h3 class="business-title">性能优越</h3>
-                        <p class="business-label color-666">—— Superior Performance ——</p>
+                        <h3 class="business-title  wow rollIn" name="switch-tag" data-tag="tag14">性能优越</h3>
+                        <p class="business-label color-666  wow rollIn">—— Superior Performance ——</p>
 
 
                     </div>
                     <div class="business-bar">
                         <div class="container-fluid text-center">
                             <div class="row">
-                                <div class="col-xs-6 business-bar-item active" data-id="8" data-type="bar1">高速交易验证签名</div>
-                                <div class="col-xs-6 business-bar-item"  data-id="12" data-type="bar1">高性能共识算法</div>
+                                <div class="col-xs-6 business-bar-item active wow zoomIn" data-id="8"
+                                    data-type="mobile-bar1">
+                                    <div name="switch-tag" data-tag="tag27">高速交易验证签名</div>
+                                </div>
+                                <div class="col-xs-6 business-bar-item wow zoomIn" data-id="12" data-type="mobile-bar1">
+                                    <div name="switch-tag" data-tag="tag28">高性能共识算法</div>
+                                </div>
                             </div>
                         </div>
                     </div>
                     <div class=" business-right padding-20">
-                        <img src="imgs/chart_8.png" alt="" class="">
+                        <img src="imgs/chart_8.png" alt="" class="business-bar-img wow slideInRight">
                     </div>
 
 
@@ -419,25 +458,32 @@
 
             </div>
             <div class="business position-relative text-center">
-                <div class=" position-relative business-detail business-bar" id="bar2">
+                <div class=" position-relative business-detail business-bar" id="mobile-bar2">
 
                     <div class=" business-introduction">
-                        <h3 class="business-title">安全可靠</h3>
-                        <p class="business-label color-666">—— Safe And Reliable ——</p>
+                        <h3 class="business-title wow rollIn" name="switch-tag" data-tag="tag16">安全可靠</h3>
+                        <p class="business-label color-666 wow rollIn">—— Safe And Reliable ——</p>
 
 
                     </div>
                     <div class="business-bar">
                         <div class="container-fluid text-center">
                             <div class="row">
-                                <div class="col-xs-4 business-bar-item active" data-id="9" data-type="bar2">多层加密机制</div>
-                                <div class="col-xs-4 business-bar-item" data-id="13" data-type="bar2">隐私保护机制</div>
-                                <div class="col-xs-4 business-bar-item" data-id="16" data-type="bar2">业务隔离机制</div>
+                                <div class="col-xs-4 business-bar-item active wow zoomIn" data-id="9"
+                                    data-type="mobile-bar2">
+                                    <div name="switch-tag" data-tag="tag29">多层加密机制</div>
+                                </div>
+                                <div class="col-xs-4 business-bar-item wow zoomIn" data-id="13" data-type="mobile-bar2">
+                                    <div name="switch-tag" data-tag="tag30">隐私保护机制</div>
+                                </div>
+                                <div class="col-xs-4 business-bar-item wow zoomIn" data-id="16" data-type="mobile-bar2">
+                                    <div name="switch-tag" data-tag="tag31">业务隔离机制</div>
+                                </div>
                             </div>
                         </div>
                     </div>
                     <div class=" business-right padding-20">
-                        <img src="imgs/chart_9.png" alt="" class="">
+                        <img src="imgs/chart_9.png" alt="" class="business-bar-img wow slideInRight">
                     </div>
 
 
@@ -446,32 +492,74 @@
 
             </div>
             <div class="business position-relative text-center">
-                <div class=" position-relative business-detail business-bar" id="bar3">
+                <div class=" position-relative business-detail business-bar" id="mobile-bar3">
 
                     <div class=" business-introduction">
-                        <h3 class="business-title">扩展灵活</h3>
-                        <p class="business-label color-666">—— Flexible Extend ——</p>
+                        <h3 class="business-title wow rollIn" name="switch-tag" data-tag="tag18">扩展灵活</h3>
+                        <p class="business-label color-666 wow rollIn">—— Flexible Extend ——</p>
 
+                        <div class="business-bar">
+                            <div class="container-fluid text-center">
+                                <div class="row">
+                                    <div class="col-xs-4 business-bar-item active wow zoomIn" data-id="10"
+                                        data-type="mobile-bar3">
+                                        <div name="switch-tag" data-tag="tag32">数据库类型可替换</div>
+                                    </div>
+                                    <div class="col-xs-4 business-bar-item wow zoomIn" data-id="14"
+                                        data-type="mobile-bar3">
+                                        <div name="switch-tag" data-tag="tag33">可插拔共识机制</div>
+                                    </div>
+                                    <div class="col-xs-4 business-bar-item wow zoomIn" data-id="17"
+                                        data-type="mobile-bar3">
+                                        <div name="switch-tag" data-tag="tag34">多语言虚拟机</div>
+                                    </div>
+                                </div>
+                            </div>
+
+
+
+                        </div>
+                        <div class=" business-right padding-20">
+                            <img src="imgs/chart_10.png" alt="" class="business-bar-img wow slideInRight">
+                        </div>
 
 
                     </div>
 
                 </div>
-                <div class="business-bar">
-                    <div class="container-fluid text-center">
-                        <div class="row">
-                            <div class="col-xs-4 business-bar-item active" data-id="10" data-type="bar3">数据库类型可替换</div>
-                            <div class="col-xs-4 business-bar-item"  data-id="14" data-type="bar3">可插拔共识机制</div>
-                            <div class="col-xs-4 business-bar-item" data-id="17" data-type="bar3">多语言虚拟机</div>
+
+
+
+            </div>
+            <div class="business position-relative text-center">
+                <div class=" position-relative business-detail business-bar" id="mobile-bar4">
+
+                    <div class=" business-introduction">
+                        <h3 class="business-title   wow rollI" name="switch-tag" data-tag="tag20">高可用性</h3>
+                        <p class="business-label color-666   wow rollI">—— High Availability ——</p>
+                    </div>
+                    <div class="business-bar">
+                        <div class="container-fluid text-center">
+                            <div class="row">
+                                <div class="col-xs-4 business-bar-item active wow zoomIn" data-id="11"
+                                    data-type="mobile-bar4">
+                                    <div name="switch-tag" data-tag="tag35">一键启动联盟链</div>
+                                </div>
+                                <div class="col-xs-4 business-bar-item wow zoomIn" data-id="15" data-type="mobile-bar4">
+                                    <div name="switch-tag" data-tag="tag36">可视化监控平台</div>
+                                </div>
+                                <div class="col-xs-4 business-bar-item wow zoomIn" data-id="18" data-type="mobile-bar4">
+                                    <div name="switch-tag" data-tag="tag37">节点动态调整</div>
+                                </div>
+                            </div>
                         </div>
                     </div>
-
                     <div class=" business-right padding-20">
-                        <img src="imgs/chart_10.png" alt="" class="">
+                        <img src="imgs/chart_11.png" alt="" class="business-bar-img wow slideInRight">
                     </div>
 
-
                 </div>
+
 
 
             </div>
@@ -483,55 +571,55 @@
                 <div class="container ">
                     <div class="row">
                         <div class="col-xs-4">
-                            <h5>产品与服务</h5>
+                            <h5 data-tag="tag2" name="switch-tag">产品与服务</h5>
                         </div>
                         <div class="col-xs-8">
                             <div class="col-xs-4">
-                                <a href="underlying-alliance-chain.html">联盟链</a>
+                                <a href="underlying-alliance-chain.html" data-tag="tag3" name="switch-tag">联盟链</a>
                             </div>
                             <div class="col-xs-4">
-                                <a href="open-platform.html">开放平台</a>
+                                <a href="open-platform.html" data-tag="tag4" name="switch-tag">开放平台</a>
                             </div>
 
                         </div>
                     </div>
                     <div class="row">
                         <div class="col-xs-4">
-                            <h5>解决方案</h5>
+                            <h5 data-tag="tag5" name="switch-tag">解决方案</h5>
                         </div>
                         <div class="col-xs-8">
                             <div class="col-xs-4">
-                                <a href="logistics-traceability.html">物流追溯</a>
+                                <a href="logistics-traceability.html" data-tag="tag6" name="switch-tag">物流追溯</a>
                             </div>
                             <div class="col-xs-4">
-                                <a href="commodity-traceability.html">商品溯源</a>
+                                <a href="commodity-traceability.html" data-tag="tag7" name="switch-tag">商品溯源</a>
                             </div>
                             <div class="col-xs-4">
-                                <a href="digital-certificate.html">数字存证</a>
+                                <a href="digital-certificate.html" data-tag="tag8" name="switch-tag">数字存证</a>
                             </div>
                             <div class="col-xs-4">
-                                <a href="charity.html">版权保护</a>
+                                <a href="charity.html" data-tag="tag11" name="switch-tag">版权保护</a>
                             </div>
                             <div class="col-xs-4">
-                                <a href="supply-chain-inance.html">供应链金融</a>
+                                <a href="supply-chain-inance.html" data-tag="tag10" name="switch-tag">供应链金融</a>
                             </div>
                             <div class="col-xs-4">
-                                <a href="copyright-protection.html">公益慈善</a>
+                                <a href="copyright-protection.html" data-tag="tag9" name="switch-tag">公益慈善</a>
                             </div>
 
                         </div>
                     </div>
                     <div class="row">
                         <div class="col-xs-4">
-                            <h5>关于我们</h5>
+                            <h5 data-tag="tag13" name="switch-tag">关于我们</h5>
                         </div>
 
                         <div class="col-xs-8">
                             <div class="col-xs-4">
-                                <a href="news.html">资讯</a>
+                                <a href="news.html" data-tag="tag12" name="switch-tag">资讯</a>
                             </div>
                             <div class="col-xs-4">
-                                <a href="about-us.html">关于我们</a>
+                                <a href="about-us.html" data-tag="tag13" name="switch-tag">关于我们</a>
                             </div>
                         </div>
                     </div>
@@ -545,14 +633,14 @@
                             <div class="col-xs-12">
 
                                 <img src="imgs/icon_service1.png" alt="" class="pull-left contact-icon">
-                                <div class="contact-information pull-left">0571-88699007878</div>
+                                <div class="contact-information pull-left">15068838852 </div>
 
 
 
                             </div>
                             <div class="col-xs-12">
                                 <img src="imgs/icon_service2.png" alt="" class="pull-left contact-icon">
-                                <div class="contact-information pull-left">service @ wjs.ai</div>
+                                <div class="contact-information pull-left">sc@wjs.ai</div>
                             </div>
                         </div>
                     </div>
@@ -561,12 +649,11 @@
 
             </div>
             <div class="text-center company-data">
-                Copyright © 2019-2020杭州雾计算科技有限公司 All Rights Reserved. 浙ICP备1904
+                Copyright © 2019-2020杭州雾计算科技有限公司 All Rights Reserved. 浙ICP备19046791号-2
             </div>
 
 
         </div>
-
     </div>
 
 

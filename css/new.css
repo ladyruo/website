@@ -1,5 +1,5 @@
 .hidden-xs .new-list {
-  padding-bottom: 80px;
+  padding-bottom: 0;
 }
 
 .hidden-xs .new-list .media {
@@ -11,6 +11,11 @@
   margin-bottom: 15px;
 }
 
+.hidden-xs .new-list .media .media-left {
+  width: 240px;
+  height: 180px;
+}
+
 .hidden-xs .new-list .media .media-left .media-object {
   width: 240px;
   height: 180px;
@@ -18,16 +23,20 @@
 
 .hidden-xs .new-list .media .media-body .media-heading {
   color: #fff;
-
   line-height: 30px;
   margin-top: -6px;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+  overflow: hidden;
+  margin-bottom: 15px;
 }
 
 .hidden-xs .new-list .media .media-body .text-muted {
   line-height: 24px;
   display: -webkit-box;
   -webkit-box-orient: vertical;
-  -webkit-line-clamp: 3;
+  -webkit-line-clamp: 2;
   overflow: hidden;
 }
 
@@ -58,7 +67,7 @@
 }
 
 .visible-xs-block .new-list .media .media-left .media-object {
-  width: 120px;
+  width: 90px;
   height: 100px;
 }
 
