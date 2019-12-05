@@ -538,6 +538,14 @@ $(function () {
 				cn: "杭州市滨江区世贸中心2601",
 				en: "2601, Shimao center, Binjiang District, Hangzhou",
 			},
+			'tag125': {
+				cn: "杭州市滨江区世贸中心2601",
+				en: "2601, Shimao center, Binjiang District, Hangzhou",
+			},
+			'tag126': {
+				cn: "联盟链",
+				en: "Union Chain",
+			},
 
 
 

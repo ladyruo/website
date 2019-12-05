@@ -379,6 +379,7 @@
 	margin-top: 10px;
 	font-weight: normal;
 	line-height: 20px;
+
 	font-size: 16px;
 }
 
@@ -389,18 +390,19 @@
 
 .visible-xs-block .news .row {
 	position: relative;
-	padding-left: 30px;
-	padding-right: 30px;
+	/* padding-left: 30px;
+	padding-right: 30px; */
 }
 
 .visible-xs-block .news .col-xs-6 {
-	padding: 0;
+	padding-left: 5px;
+	padding-right: 5px;
 }
 
 .visible-xs-block .news .show-more {
 	position: absolute;
 	bottom: 0;
-	right: 30px;
+	right: 15px;
 }
 
 .visible-xs-block .news .new-img-2 {
@@ -438,6 +440,7 @@
 
 .visible-xs-block .news .thumbnail img {
 	height: 95px;
+	width: 100%;
 }
 
 .visible-xs-block .news .thumbnail .caption {

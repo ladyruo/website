@@ -165,7 +165,7 @@ body::-webkit-scrollbar-thumb {
 
 .hidden-xs .top-jumbotron .jumbotron p {
 	font-size: 14px;
-	width: 35%;
+	width: 45%;
 	line-height: 30px;
 	color: #666;
 }
@@ -229,9 +229,7 @@ body::-webkit-scrollbar-thumb {
 
 .hidden-xs .products .product .product-item-img {
 	height: 0;
-	/* width: 90%;
-	padding-bottom: 90%; */
-	width: 180px;
+	width: 100%;
 	height: 180px;
 	display: inline-block;
 	position: relative;
@@ -250,7 +248,8 @@ body::-webkit-scrollbar-thumb {
 	left: 50%;
 	top: 50%;
 	transform: translate(-50%, -50%);
-	height: 90px;
+	height: 75px;
+	width: 75px;
 }
 
 .hidden-xs .products .product-item-3 {
@@ -352,14 +351,18 @@ body::-webkit-scrollbar-thumb {
 
 .hidden-xs .business .business-bar-item {
 	background: #181A1A;
+	color: #585959;
 }
-
+.hidden-xs .business .business-bar-item h3{
+	font-size: 20px;
+}
 .hidden-xs .business .business-bar-item:not(:first-child) {
 	margin-top: 0;
 }
 
 .hidden-xs .business .business-introduction .active {
 	background: #CAA971 !important;
+	color: #fff !important;
 }
 
 .hidden-xs .business .media .media-left img {
@@ -384,7 +387,7 @@ body::-webkit-scrollbar-thumb {
 
 .hidden-xs .business .media-icon-arrow {
 	position: absolute;
-	right: 10px;
+	right: 20px;
 	top: 50%;
 	transform: translateY(-50%);
 }
@@ -621,7 +624,9 @@ body::-webkit-scrollbar-thumb {
 	width: 60px;
 	margin-right: 1em;
 }
-
+.hidden-xs  .footer-3{
+	color: #313333;
+}
 .hidden-xs .bottom hr {
 	border-color: #18181a;
 }
@@ -895,6 +900,7 @@ body::-webkit-scrollbar-thumb {
 	font-size: 14px;
 	line-height: 30px;
 	color: #666;
+	width: 90%;
 }
 
 /* 头部巨幕 */
@@ -956,7 +962,7 @@ body::-webkit-scrollbar-thumb {
 
 .visible-xs-block .products .product .product-item-img {
 	height: 0;
-	width: 90%;
+	width: 100%;
 	padding-bottom: 90%;
 	display: inline-block;
 	position: relative;
@@ -975,7 +981,8 @@ body::-webkit-scrollbar-thumb {
 	left: 50%;
 	top: 50%;
 	transform: translate(-50%, -50%);
-	height: 90px;
+	height: 50px;
+	width: 50px;
 }
 
 .visible-xs-block .products .product-item-3 {
@@ -1092,12 +1099,12 @@ body::-webkit-scrollbar-thumb {
 
 .visible-xs-block .business .media-body p {
 	margin-bottom: 0;
-	font-size: 16px;
+	font-size: 14px;
 	line-height: 20px;
 }
 
 .visible-xs-block .business .media-heading {
-	font-size: 20px;
+	font-size: 18px;
 	margin-bottom: 21px;
 }
 
@@ -1115,9 +1122,11 @@ body::-webkit-scrollbar-thumb {
 }
 
 .visible-xs-block .business .business-introduction-text p {
-	width: 80%;
+	width: 92%;
 	margin-top: 50px;
 	margin-bottom: 50px;
+	font-size: 16px;
+	text-indent: 2em;
 }
 
 .visible-xs-block .business-right-bg {
@@ -1230,7 +1239,7 @@ body::-webkit-scrollbar-thumb {
 	line-height: 30px;
 	border-top: 1px solid #181A1A;
 	padding: 20px;
-	color: #666;
+	color: #313333;
 }
 
 /* 底部 */

@@ -3,6 +3,7 @@
 	line-height: 40px;
 	color: #666666;
 	padding: 0 150px;
+	text-indent: 2em;
 }
 
 .hidden-xs .business .about-us-connection .about-us-connection-item {
@@ -46,8 +47,10 @@
 /* pc  */
 .visible-xs-block .about-us-text {
 	font-size: 14px;
-	line-height: 40px;
+	line-height: 30px;
+	text-indent: 2em;
 	color: #666666;
+	margin-bottom: 20px;
 }
 
 .visible-xs-block .business .about-us-connection .about-us-logo {
